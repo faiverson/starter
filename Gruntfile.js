@@ -22,7 +22,6 @@ module.exports = function (grunt) {
 	 * Load in our build configuration file.
 	 */
 	var userConfig = require( './grunt-templates/config.js' );
-	var path = require('path');
 	/**
 	 * This is the configuration object Grunt uses to give each plugin its
 	 * instructions.
@@ -92,7 +91,7 @@ module.exports = function (grunt) {
 		changelog: {
 			options: {
 				dest: 'CHANGELOG.md',
-				template: 'grunt-templates/changelog.tpl'
+				template: './grunt-templates/changelog.tpl'
 			}
 		},
 
@@ -520,7 +519,7 @@ module.exports = function (grunt) {
 	/**
 	 * The default task is to build and compile.
 	 */
-grunt.registerTask( 'default', ['build', 'compile' ]);
+	grunt.registerTask( 'default', ['build', 'compile' ]);
 
 	/**
 	 * The `build` task gets your app ready to run for development and testing.
@@ -568,15 +567,15 @@ grunt.registerTask( 'default', ['build', 'compile' ]);
 	 */
 	grunt.registerMultiTask( 'index', 'Process index.html template', function () {
 		var dirRE = new RegExp( '^('+grunt.config('public_dir') + '|' + grunt.config('compile_dir')+')\/', 'g' );
-		var jsFiles = filterForJS( this.filesSrc ).map( function ( file ) {
+		var jsFiles = filterForJS(this.filesSrc).map( function ( file ) {
 			return file.replace( dirRE, '' );
 		});
-		var cssFiles = filterForCSS( this.filesSrc ).map( function ( file ) {
+		var cssFiles = filterForCSS(this.filesSrc).map( function ( file ) {
 			return file.replace( dirRE, '' );
 		});
 
 		grunt.file.copy(grunt.config('source_dir') + '/index.html', this.data.dir + '/index.html', {
-			process: function ( contents, path ) {
+			process: function (contents, path) {
 				return grunt.template.process( contents, {
 					data: {
 						scripts: jsFiles,
