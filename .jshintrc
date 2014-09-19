@@ -1,0 +1,25 @@
+{
+	"boss" : true,
+	"browser" : true,
+	"curly" : true,
+	"eqeqeq" : true,
+	"eqnull" : true,
+	"evil" : true,
+	"immed" : true,
+	"latedef" : true,
+	"newcap" : true,
+	"noarg" : true,
+	"plusplus" : false,
+	"scripturl" : true,
+	"smarttabs" : true,
+	"sub" : true,
+	"undef" : true,
+	"globals" : {
+		"module": true,
+		"require": true,
+		"console": true,
+		"$" : true,
+		"jQuery": true,
+		"JST": true
+	}
+}

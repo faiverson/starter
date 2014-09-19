@@ -1,0 +1,51 @@
+{
+  "author": "Fabian Torres <fa.iverson@gmail.com>",
+  "name": "Started",
+  "version": "1.0.0",
+  "homepage": "https://github.com/faiverson/starter",
+  "licenses": {
+    "type": "MIT",
+    "url": "https://github.com/faiverson/starter/LICENSE"
+  },
+  "contributors": [
+    {
+      "name": "Fabian Torres",
+      "email": "fa.iverson@gmail.com",
+      "web": "http://fabiantorres.com.ar/"
+    }
+  ],
+  "bugs": "https://github.com/faiverson/starter/issues",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:faiverson/starter.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "starter"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-clean": "^0.4.1",
+    "grunt-contrib-copy": "^0.4.1",
+    "grunt-contrib-jshint": "^0.4.3",
+    "grunt-contrib-concat": "^0.3.0",
+    "grunt-contrib-watch": "^0.4.4",
+    "grunt-contrib-uglify": "^0.2.7",
+    "grunt-conventional-changelog": "^0.1.2",
+    "grunt-bump": "0.0.6",
+    "grunt-ngdoc": "~0.1.3",
+    "jshint-stylish": "~0.4.0",
+    "grunt-ng-annotate": "~0.4.0",
+    "underscore": "~1.7.0",
+    "grunt-contrib-jst": "~0.6.0",
+    "lodash-cli": "~2.4.2",
+    "grunt-contrib-less": "~0.11.4",
+    "lodash": "~2.4.1",
+    "grunt-contrib-connect": "~0.8.0",
+    "grunt-open": "~0.2.3",
+    "grunt-express": "~1.4.1",
+    "request": "~2.44.0"
+  },
+  "engines": {}
+}
